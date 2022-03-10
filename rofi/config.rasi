@@ -23,10 +23,10 @@ window {
     transparency:                   "real";
     background-color:               @background;
     text-color:                     @foreground;
-	border:							0% 0% 0% 1.5%;
+	border:							0% 0% 3% 0%;
 	border-color:					@border;
-    border-radius:                  0% 0% 0% 0%;
-    height:                         68%;
+    border-radius:                  25px 25px 50px 50px;
+    height:                         70%;
     width:                          55%;
     location:                       center;
     x-offset:                       0;
@@ -60,14 +60,14 @@ inputbar {
 	border:							0% 0% 0.3% 0%;
     border-radius:                  0% 0% 0% 0%;
 	border-color:					@border-alt;
-    margin:                         0% 13% 0% 0%;
+    margin:                         0% 0% 2% 0%;
     padding:                        1%;
     position:                       center;
 }
 
 listview {
     background-color:               @background;
-    columns:                        5;
+    columns:                        6;
     spacing:                        1%;
     cycle:                          false;
     dynamic:                        true;
@@ -76,8 +76,8 @@ listview {
 
 mainbox {
     background-color:               @background;
-	border:							0% 0% 0% 1.5%;
-    border-radius:                  0% 0% 0% 0%;
+	border:							0% 0% 3% 0%;
+    border-radius:                  50px;
 	border-color:					@border-alt;
     children:                       [ inputbar, listview ];
     spacing:                       	2%;
@@ -127,7 +127,7 @@ element selected {
     background-color:               @selected;
     text-color:                     @foreground;
 	border:							0% 0% 0.3% 0%;
-    border-radius:                  0% 0% 0% 0%;
+    border-radius:                  25px;
     border-color:                  	@border-alt;
 }
 

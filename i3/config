@@ -14,6 +14,9 @@ focus_follows_mouse no
 # Police à utiliser
 font pango:JetBrains Mono 8
 
+# Compton
+exec --no-startup-id compton
+
 # Fond d'écran
 exec --no-startup-id feh --bg-fill ~/Images/Wallpapers/MSI_Screen.jpg --bg-fill ~/Images/Wallpapers/LG_Screen.jpg --bg-fill ~/Images/Wallpapers/Asus_Screen.jpg
 
@@ -122,7 +125,7 @@ workspace $ws9 output $monitorLG
 
 assign [class="jetbrains-webstorm|Code"] $ws1
 assign [class="gnome-terminal-server|Gnome-terminal"] $ws2
-assign [class="Firefox|Brave"] $ws3
+assign [class="firefox|Brave|Navigator"] $ws3
 assign [class="notion-snap"] $ws4
 assign [class="insomnia|Insomnia"] $ws5
 assign [class="Todoist|todoist"] $ws5
@@ -194,6 +197,7 @@ bindsym $mod+r mode "resize"
 for_window [class=".*"] border pixel 0
 for_window [class=".*"] title_format "   %title"
 gaps inner 30
+# gaps outer 30
 smart_gaps on
 smart_borders on
 
