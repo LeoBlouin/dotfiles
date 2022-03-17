@@ -97,7 +97,7 @@ type = internal/pulseaudio
 
 format-volume = <ramp-volume> <label-volume>
 label-volume = %percentage%%
-label-volume-foreground = ${colors.secondary}
+label-volume-foreground = ${colors.foregroud}
 
 label-muted = 
 label-muted-foreground = #666
@@ -106,7 +106,7 @@ ramp-volume-0= 
 ramp-volume-1= 
 ramp-volume-2= 
 ramp-volume-3= 
-ramp-volume-foreground = ${colors.secondary}
+ramp-volume-foreground = ${colors.foreground}
 
 [module/powermenu]
 type = custom/menu
