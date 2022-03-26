@@ -12,7 +12,11 @@ success = #71d385
 width = 100%
 height = 40
 radius = 0
+; offset-x = 25%
+; offset-y = 5
 fixed-center = true
+; wm-restack = 
+; override-redirect = true
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -131,3 +135,10 @@ menu-2-0-exec = menu-open-0
 menu-2-1 =          
 menu-2-1-foreground = ${colors.success}
 menu-2-1-exec = poweroff
+
+[module/memory]
+type = internal/memory
+interval = 1
+warn-percentage = 1
+format = RAM : <label>
+warn-percentage-foreground = #ff0
